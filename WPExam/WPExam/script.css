@@ -1,0 +1,37 @@
+
+.cardImage {
+	position: relative;
+	margin: 0%
+	border: 2px solid rgb(14, 13, 13);
+	 max-height: 50%;
+  max-width: 100%
+
+}
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  color: red;
+}
+.profile {
+	border-radius: 50%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 2px;
+  background-color: #f1f1f1;
+}
+.containerCard {
+  overflow: scroll;
+  width: 300px;
+  height: 90px;
+}
+hr {
+	border-width: 2px;
+	border-color: black;
+}
+.containerMatter {
+  overflow: scroll;
+  width: 300px;
+  height: 150px;
+}
