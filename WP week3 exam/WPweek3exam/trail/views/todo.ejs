@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Todo List</title>
+        <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="  crossorigin="anonymous"></script>
+        <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
+        <script src="/assets/todo-list.js"></script>
+    </head>
+    <body>
+        <!-- <h1>My To do List -->
+        <!-- </h1> -->
+            <div id="todo-table">
+            <form>
+            <!-- <input type="text" name="item" placeholder="Add new item..." required /> -->
+            <!-- <button type="submit">Add item</button>     -->
+            </form>
+                <% for(var i=0; i< todos.length; i++){%>
+                    <img class="logo" src="http://localhost:3000/assets/<%= todos[i].image %>" ><br>
+                    <li><%= todos[i].title %><br></li>
+                    <li><%= todos[i].description %><br></li>
+                    <b>Delete</b>
+                       <!-- <input type="text" name="item" placeholder="Add new item..." required /> -->
+                        <!-- <p><button type="submit" name = <%= todos[i].title %>>Delete</button></p> -->
+                        <p><button type="submit" ><%= todos[i].title %></button></p><br>
+                        <br><br><br><br>
+
+                        <form>
+                            <!-- <input type="text" name="title" placeholder="Edit" required /> -->
+                            <!-- <input type="text" name="description" placeholder="Add new description..." required />
+                            <input type="text" name="quantity" placeholder="Add new qunatity..." required /> -->
+                            <button type="submit">Edit</button>    
+                            </form>
+
+               <% } %>
+            </div>
+    </body>
+</html>
